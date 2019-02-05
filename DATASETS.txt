@@ -9,8 +9,7 @@ and the data file for 2010 consists of 601,285 rows and 113 fields.
 
 #interesting attributes and relationships in the data
 Interesting attributes: Crime Suspected (type of crime), Physical Force used by Officer
-Lower order relationship: The files are related through a time series relationship.
-Higher order relationship: 
+Relationship: The files are related through a time series relationship. multiple attributes linking to each other.
 
 #insights we hope to gain from analyzing the data
 - how successful the program was (how often the suspects were arrested)
