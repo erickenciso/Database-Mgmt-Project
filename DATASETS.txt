@@ -10,11 +10,17 @@ Higher order relationship:
 #insights we hope to gain from analyzing the data
 - how successful the program was (how often the suspects were arrested)
 - which precinct a suspect is most likely to be stopped in
-- which crimes were the most common
+- which crimes were the most common (type)
 - the relationship between education level and crime rate (or how likely a person is to be stopped)
 
 #download links to the dataset (or API endpoints)
-https://public.enigma.com/browse/collection/new-york-city-police-departments-stop-and-frisk-program/3ec8b646-4c15-4fc6-87c3-cdc61374af51
+https://public.enigma.com/datasets/new-york-city-police-departments-stop-and-frisk-program-2012/5a52e886-3ac5-4479-a8ef-9d4fd80a9240
+
+https://public.enigma.com/datasets/new-york-city-police-departments-stop-and-frisk-program-2011/15c29592-64f0-4686-81d2-dafa4e291c0c
+
+https://public.enigma.com/datasets/new-york-city-police-departments-stop-and-frisk-program-2010/71ed2354-54c5-4718-b4a6-a7a652e9684a
 
 #identifier
-3ec8b646-4c15-4fc6-87c3-cdc61374af51
+5a52e886-3ac5-4479-a8ef-9d4fd80a9240
+15c29592-64f0-4686-81d2-dafa4e291c0c
+71ed2354-54c5-4718-b4a6-a7a652e9684a
