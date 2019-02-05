@@ -13,14 +13,22 @@ Higher order relationship:
 - which crimes were the most common (type)
 - the relationship between education level and crime rate (or how likely a person is to be stopped)
 
-#download links to the dataset (or API endpoints)
+#download links to the dataset
+2012:
 https://public.enigma.com/datasets/new-york-city-police-departments-stop-and-frisk-program-2012/5a52e886-3ac5-4479-a8ef-9d4fd80a9240
 
+2011:
 https://public.enigma.com/datasets/new-york-city-police-departments-stop-and-frisk-program-2011/15c29592-64f0-4686-81d2-dafa4e291c0c
 
+2010:
 https://public.enigma.com/datasets/new-york-city-police-departments-stop-and-frisk-program-2010/71ed2354-54c5-4718-b4a6-a7a652e9684a
 
 #identifier
+2012:
 5a52e886-3ac5-4479-a8ef-9d4fd80a9240
+
+2011:
 15c29592-64f0-4686-81d2-dafa4e291c0c
+
+2010:
 71ed2354-54c5-4718-b4a6-a7a652e9684a
