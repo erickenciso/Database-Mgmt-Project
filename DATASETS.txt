@@ -1,6 +1,11 @@
 #describe the data
 Our main dataset contians details and statistical disclosure regarding the New York City Police Department's
-Stop and Frisk Program Activity (from 2010 to 2012).
+Stop and Frisk Program Activity (from 2010 to 2012). The dataset includes time and date of stops, suspects'
+offenses, suspects' physical descriptions, reasons for stops, reasons for frisk, arrests/summons made,
+weapons found, contrabands found, actions taken, complaints filed, additional circumstances, and more. The
+source of our files is the official website of The New York City Police Department. The data file for 2012 
+consists of 532,911 rows and 144 fields, the data file for 2011 consists of 685,724 rows and 144 fields, 
+and the data file for 2010 consists of 601,285 rows and 113 fields.
 
 #interesting attributes and relationships in the data
 Interesting attributes: Crime Suspected (type of crime), Physical Force used by Officer
