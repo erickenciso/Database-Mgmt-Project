@@ -1,4 +1,4 @@
---From our 2010 table, this query is selecting all the data of suspects whom physical force (specifically handcuffs) were
+--From our 2010 table, this query selects all the data of suspects whom physical force (specifically handcuffs) were
 --used on by the police. The data is in an ascending order of serial numbers.
 Select * From NYC_Stop_and_Frisk.NYC_DATA_2010
 Where pf_hcuff = True
