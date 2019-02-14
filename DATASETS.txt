@@ -8,7 +8,9 @@ of 13 fields and 174,567 rows, the data file 'Review' consists of 9 fields and 5
 file 'User' consists of 22 fields and 1,326,100 rows.
 
 #interesting attributes and relationships in the data
-Interesting attributes: Crime Suspected (type of crime), Physical Force used by Officer
+Interesting attributes: review_count, yelping_since, average_stars
+Relationship: The files are related through 
+
 Relationship: The files are related through a time series relationship. Also, there are multiple attributes linking
 to each other so that we could see trends across the years.
 
