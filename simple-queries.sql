@@ -1,17 +1,18 @@
---From our 2010 table, this query selects all the data of suspects whom physical force (specifically handcuffs) was
---used on by the police. The data is in an ascending order of serial numbers.
-Select * From NYC_Stop_and_Frisk.NYC_DATA_2010
-Where pf_hcuff = True
-Order by ser_num
+--From our 'Yelp_Business' table, this query selects all the data of businesses located in Las Vegas. The data is
+--in an ascending order of review counts.
+Select * From Yelp_Dataset.Yelp_Business
+Where city = 'Las Vegas'
+Order by review_count
 
---From our 2011 table, this query leads to a display of all the suspects who were found carrying a pistol. The data is
---in arranged in order from the earliest time of stop to the latest.
-Select * From NYC_Stop_and_Frisk.NYC_DATA_2011
-Where pistol = True
-Order by timestop
+--From our 'Yelp_Review' table, this query selects all the data of reviews, which more than 50 users believed
+--to be useful. The data is in ordered by review IDs.
+Select * From Yelp_Dataset.Yelp_Review
+Where useful > 50
+Order by review_id
 
---From our 2012 table, this query displays the type of ID, whether or not the arrest was made, gender, and race of
---all the suspects who were suspected to be involved in robbery. The data is in an ascending order of serial numbers.
-Select N.typeofid, N.arstmade, N.sex, N.race From NYC_Stop_and_Frisk.NYC_DATA_2012 N
-Where crimsusp = "ROBBERY"
-Order by ser_num
+--From our 'Yelp_User' table, this query displays the name of user, review counts, user's yelp account registration
+--date, and number of fans of users who have more than 100 fans. The data is ordered by earlist account registration
+--date to the latest date.
+Select name, review_count, yelping_since, fans From Yelp_Dataset.Yelp_User
+Where fans > 100
+Order by yelping_since
