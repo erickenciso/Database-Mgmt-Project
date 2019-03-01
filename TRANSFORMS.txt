@@ -1,2 +1,2 @@
 'Yelp_User' table:
-The user_id is our primary key for the table, and the 'friends' column contains the user_id of other users.
+The user_id is our primary key for the table, and the 'friends' column contains multiple 'user_id's of other users.
