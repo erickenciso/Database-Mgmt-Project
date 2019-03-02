@@ -1,4 +1,4 @@
 'Yelp_User' table:
 The user_id is our primary key for the table, and the 'friends' column contains multiple 'user_id's of other users.
 We would have to split up the multiple IDs at the commas so that we have a single PK and FK relationship. Another
-possiblity is to create (or replace) the column with the number of friends eah user has (as an integer).
+possiblity is to create (or replace) the column with the number of friends each user has (as an integer).
