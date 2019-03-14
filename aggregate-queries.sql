@@ -55,7 +55,7 @@ having fans > 200
 order by fans
 
 --From the Yelp_User table, this query groups the data by the average stars. The output shows the total number of users
---and the maximum number of fans a user from each group has. The output is limits the average star rating to greater
+--and the maximum number of fans a user from each group has. The output is limited the average star rating to greater
 --than 4.
 select average_stars, count(user_id) as count_users, max(fans) as max_fans
 from Yelp_Dataset.Yelp_User
