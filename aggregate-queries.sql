@@ -1,15 +1,37 @@
 --From the Yelp_Business table, this query groups the average star rating and the total number of reviews by city. 
---This query also specifically displays data that have an average star rating greater than 4.
-select city, avg(stars) as avg_stars, sum(review_count) as sum_review
+--This query also displays the top 10 cities that have over 1,000 reviews in order to not be skewed by small number of reviews.
+select concat(city,', ',state) as city_state, avg(stars) as avg_stars, sum(review_count) as sum_review
 from Yelp_Dataset.Yelp_Business
-group by city
-having avg(stars) > 4
+group by city_state
+having sum_review >= 1000
+order by avg_stars desc
+limit 10
+
+--From the Yelp_Business table, this query groups the average star rating and the total number of reviews by city. 
+--This query also displays the lowest 10 cities that have over 1,000 reviews in order to not be skewed by small number of reviews.
+select concat(city,', ',state) as city_state, avg(stars) as avg_stars, sum(review_count) as sum_review
+from Yelp_Dataset.Yelp_Business
+group by city_state
+having sum_review >= 1000
+order by avg_stars
+limit 10
 
 --From the Yelp_Business table, by groupding the data by state, this query shows how many businesses are in each 
 --state and how many of them are open.
 select state, count(business_id) as count_business, sum(is_open) as count_open
 from Yelp_Dataset.Yelp_Business
 group by state
+
+--From the Yelp_Review table we joined the Yelp_User table to find which names were most commonly making post.
+--Limited to top 10 for visibilty
+
+select u.name, count(review_id) as count_reviews
+from Yelp_Dataset.Yelp_Review r 
+join [Yelp_Dataset.Yelp_User] u on r.user_id = u.user_id
+group by u.name
+order by count_reviews desc
+limit 10
+
 
 --From the Yelp_Business table, the data is grouped and ordered by the star rating. The query displays the number of
 --open businesses in each star rating. For each star rating, the query also displays the maximum number of reviews 
