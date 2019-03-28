@@ -8,3 +8,10 @@ from Yelp_Dataset.Yelp_Business)
 group by state
 order by state
 
+--This query displays the information of users who wrote more than 1000 reviews, have more than 500 'useful' votes,
+--and have star ratings greater than average
+select user_id, name, review_count, yelping_since, useful, average_stars
+from Yelp_Dataset.Yelp_User
+where review_count > 1000 and useful > 500 and average_stars >
+(select avg(average_stars)
+from Yelp_Dataset.Yelp_User)
