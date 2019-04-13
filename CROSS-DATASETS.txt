@@ -21,3 +21,10 @@ use are INNER JOIN, AVG, SUM, subtraction, GROUP BY, and DESC. A ParDo transform
 all the quotation marks used for business names. Another transform is required on dataset2 to add another column, 
 or change, the stock's ticker names into business names. A GroupByKey may be required for dataset2 to group the 
 businesses as keys and the financial information as values.
+
+- We could join dataset1 and dataset2 to find the top 5 states consisting businesses with the highest stock prices.
+The query is expected to produce the states and their according maximum of average stock open prices. The SQL
+operations the query will use are INNER JOIN, MAX, AVG, GROUP BY, and DESC. A ParDo transform is required on dataset1 
+to remove all the quotation marks used for business names. Another transform is required on dataset2 to add another 
+column, or change, the stock's ticker names into business names. A GroupByKey may be required for dataset2 to group 
+the businesses as keys and the financial information as values.
