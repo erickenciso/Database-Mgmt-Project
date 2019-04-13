@@ -25,22 +25,22 @@ https://www.kaggle.com/yelp-dataset/yelp-dataset
 
 Dataset2:
 #describe the data
-Our second dataset contains a list of companies in the S&P 500 with each of their financial information.
-The dataset includes a list of all the stocks and the associated important financials such as price, market
-capitalization, earnings, price/earnings ratio, price to book, dividend yield, EBITDA, and more. The source
-of our file is Datahub and this dataset was put together using the informamtion from Yahoo Finance. In this
-dataset, financial information of a total of 505 companies are present. The data file 'constituents-financials'
-consists of 14 fields and 505 rows.
+Our second dataset contains historical stock prices and financial information (last 5 years from 2013 - 2018) 
+for all companies currently influded in the S&P 500 index. The dataset includes a list of all the stocks and
+the associated important financials such as the stock's ticker name, date, open price, highest price, lowest
+price, close price, and the number of shares traded. The source of our file is kaggle and this data was put 
+together using The Investor's Exchange api. In this dataset, financial information of a total of 505 unique 
+companies are present. The data file 'all_stocks_5yr' consists of 7 fields and 470,064 rows.
 
 #interesting attributes and relationships in the data
-Interesting attributes: Sector, Price, Earnings/Share
+Interesting attributes: high, low, open, close
 Relationship: We would be able to see how the stock prices relate to the ratings on Yelp. Also, there are
-multiple attributes linking the first and second datasets so that we could we trends.
+multiple attributes linking the first and second datasets so that we could see trends.
 
 #insights we hope to gain from analyzing the data
-- how does the stock prices depend on how many reviews or how much ratings they have on Yelp
-- how does the dividend yield relate to how popular the business is
-- how does the stability (difference between 52 Week High and 52 Week Low) relate to the ratings on Yelp
+- how do stock prices depend on how many reviews or how much ratings businesses have on Yelp
+- how do the number of shares traded relate to how popular businesses are
+- how does the stability (difference between highest and lowest prices) relate to the ratings on Yelp
 
 #download link to the dataset
-https://datahub.io/core/s-and-p-500-companies-financials
+https://www.kaggle.com/camnugent/sandp500#all_stocks_5yr.csv
