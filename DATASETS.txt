@@ -1,3 +1,4 @@
+Dataset 1:
 #describe the data
 Our main dataset contains subsets of Yelp's businesses, reviews, and user data. The dataset provides access
 to information about business across 11 metropolitan areas in four countries. The dataset includes business
@@ -20,3 +21,26 @@ multiple attributes linking to each other so that we could see trends across the
 
 #download link to the dataset
 https://www.kaggle.com/yelp-dataset/yelp-dataset
+
+
+Dataset2:
+#describe the data
+Our second dataset contains a list of companies in the S&P 500 with each of their financial information.
+The dataset includes a list of all the stocks and the associated important financials such as price, market
+capitalization, earnings, price/earnings ratio, price to book, dividend yield, EBITDA, and more. The source
+of our file is Datahub and this dataset was put together using the informamtion from Yahoo Finance. In this
+dataset, financial information of a total of 505 companies are present. The data file 'constituents-financials'
+consists of 14 fields and 505 rows.
+
+#interesting attributes and relationships in the data
+Interesting attributes: Sector, Price, Earnings/Share
+Relationship: We would be able to see how the stock prices relate to the ratings on Yelp. Also, there are
+multiple attributes linking the first and second datasets so that we could we trends.
+
+#insights we hope to gain from analyzing the data
+- how does the stock prices depend on how many reviews or how much ratings they have on Yelp
+- how does the dividend yield relate to how popular the business is
+- how does the stability (difference between 52 Week High and 52 Week Low) relate to the ratings on Yelp
+
+#download link to the dataset
+https://datahub.io/core/s-and-p-500-companies-financials
