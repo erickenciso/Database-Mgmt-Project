@@ -1,23 +1,23 @@
 - We could join dataset1 and dataset2 to find a relationship between Yelp average ratings and the average of stock
 open prices(5 years). The query is expected to produce a descending order of Yelp average ratings of the businesses 
-listed in S&P 500 and their according average open stock prices. The SQL operations the query will use are INNER JOIN, 
-AVG, GROUP BY, and DESC. An ParDo transform is required on dataset1 to remove all the quotation marks used for 
-business names. Another transform is required on dataset2 to add another column, or change, the stock's ticker name 
+listed in the S&P 500 and their according average open stock prices. The SQL operations the query will use are INNER JOIN, 
+AVG, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove all the quotation marks used for 
+business names. Another transform is required on dataset2 to add another column, or change, the stock's ticker names 
 into business names. A GroupByKey may be required for dataset2 to group the businesses as keys and the financial
 information as values.
 
 - We could join dataset1 and dataset2 to find a relationship between the popularity of businesses and the total number 
-of shares traded. The query is expected to produce a descending order of review count on Yelp of the businesses listed
-in S&P 500 and their according total number of shares traded. The SQL operations the query will use are INNER JOIN, SUM,
-GROUP BY, and DESC. An element-wise transform is required on dataset1 to remove all the quotation marks used for 
-business names. Another transform is required on dataset2 to add another column, or change, the stock's ticker name 
-into business names. A GroupByKey may be required for dataset2 to group the businesses as keys and the financial
+of shares traded. The query is expected to produce a descending order of review counts on Yelp of the businesses listed
+in the S&P 500 and their according total number of shares traded. The SQL operations the query will use are INNER JOIN, 
+SUM, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove all the quotation marks used for business 
+names. Another transform is required on dataset2 to add another column, or change, the stock's ticker names into 
+business names. A GroupByKey may be required for dataset2 to group the businesses as keys and the financial
 information as values.
 
 - We could join dataset1 and dataset2 to find a relationship between Yelp average ratings and the stability in stock
-prices. The query is expected to produce a descending order of Yelp average ratings of the businesses in S&P 500
+prices. The query is expected to produce a descending order of Yelp average ratings of the businesses in the S&P 500
 and their according average difference between the highest and lowest stock prices. The SQL operations the query will
-use are INNER JOIN, AVG, SUM, subtraction, GROUP BY, and DESC. An ParDo transform is required on dataset1 to remove 
+use are INNER JOIN, AVG, SUM, subtraction, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove 
 all the quotation marks used for business names. Another transform is required on dataset2 to add another column, 
-or change, the stock's ticker name into business names. A GroupByKey may be required for dataset2 to group the 
+or change, the stock's ticker names into business names. A GroupByKey may be required for dataset2 to group the 
 businesses as keys and the financial information as values.
