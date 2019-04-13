@@ -1,1 +1,14 @@
+These queries should use a join to combine the data.
+● Briefly describe what results the query is expected to produce and what SQL operations
+the query will use to produce those results (1-2 sentences).
+● Briefly describe what type(s) of data transforms are required to successfully implement
+the query (1-2 sentences).
+
+
+- We could join dataset1 and dataset2 to find a relationship between Yelp average ratings and the average of stock
+open prices(5 years). The query is expected to produce an descending order of Yelp average ratings of the companies 
+listed in S&P 500 and their according average open stock prices. The SQL operations the query will use are INNER JOIN, 
+AVG, GROUP BY, and DESC. An element-wise transform is required on dataset1 to remove all the quotation marks used for 
+business names. Another transform is required on dataset2 to add another column, or change, the stock's ticker name 
+into business names.
 
