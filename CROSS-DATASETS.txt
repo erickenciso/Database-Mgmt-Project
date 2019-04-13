@@ -28,3 +28,12 @@ operations the query will use are INNER JOIN, MAX, AVG, GROUP BY, and DESC. A Pa
 to remove all the quotation marks used for business names. Another transform is required on dataset2 to add another 
 column, or change, the stock's ticker names into business names. A GroupByKey may be required for dataset2 to group 
 the businesses as keys and the financial information as values.
+
+-We could join the SP_500 table with the Yelp_Business Table and the Yelp_Review Table for those rows with starbucks as the business name in order to see if there is a correlation between the percentage change in stock price and the percentage change in the average rating for that business over a day. A ParDo transform is required on dataset1 in order to add the ticker symbol as a column for the Yelp_Business table. Another transform is required on dataset2 to add another 
+column, or change, the stock's ticker names into business names. A GroupByKey may be required for dataset2 to group 
+the businesses as keys and the financial information as values.
+
+
+-We could join the SP_500 table with the Yelp_Business Table and the Yelp_Review Table for those rows with Mcdonald's as the business name in order to see if there is a correlation between the percentage change in stock price and the percentage change in the average rating for MCdonald's over a period of a month/year. A ParDo transform is required on dataset1 in order to add the ticker symbol as a column for the Yelp_Business table. Another transform is required on dataset2 to add another 
+column, or change, the stock's ticker names into business names. A GroupByKey may be required for dataset2 to group 
+the businesses as keys and the financial information as values.
