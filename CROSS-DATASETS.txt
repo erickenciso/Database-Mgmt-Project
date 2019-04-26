@@ -1,17 +1,17 @@
 - We could join dataset1 and dataset2 to find a relationship between Yelp average ratings and the average of stock
-open prices(5 years). The query is expected to produce a descending order of Yelp average ratings of the businesses 
-listed in the S&P 500 and their according average open stock prices. The SQL operations the query will use are INNER JOIN, 
-AVG, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove all the quotation marks used for 
+open prices. The query is expected to produce a descending order of Yelp average ratings of the businesses 
+listed in the S&P 500 and their according average open stock prices (monthly). The SQL operations the query will use are 
+INNER JOIN, AVG, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove all the quotation marks used for 
 business names. Another transform is required on dataset2 to add another column, or change, the stock's ticker names 
 into business names. A GroupByKey may be required for dataset2 to group the businesses as keys and the financial
 information as values.
 
 - We could join dataset1 and dataset2 to find a relationship between the popularity of businesses and the total number 
 of shares traded. The query is expected to produce a descending order of review counts on Yelp of the businesses listed
-in the S&P 500 and their according total number of shares traded. The SQL operations the query will use are INNER JOIN, 
-SUM, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove all the quotation marks used for business 
-names. Another transform is required on dataset2 to add another column, or change, the stock's ticker names into 
-business names. A GroupByKey may be required for dataset2 to group the businesses as keys and the financial
+in the S&P 500 and their according total number of shares traded (monthly). The SQL operations the query will use are 
+INNER JOIN, SUM, GROUP BY, and DESC. A ParDo transform is required on dataset1 to remove all the quotation marks used 
+for business names. Another transform is required on dataset2 to add another column, or change, the stock's ticker names 
+into business names. A GroupByKey may be required for dataset2 to group the businesses as keys and the financial
 information as values.
 
 - We could join dataset1 and dataset2 to find a relationship between Yelp average ratings and the stability in stock
