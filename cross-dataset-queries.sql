@@ -26,8 +26,14 @@ inner join Sp500_Dataset.SP500 sp on ts.ticker = sp.Name
 group by sp.Name
 order by Avg_Ratings desc
 
---4
-
+--This query joins multiple tables from Datasaet1 and Dataset2 to show the relationship between Yelp average
+--star ratings and the difference between open and close prices (close - open).
+select sp.Name, avg(yb.stars) as Avg_Ratings, avg(sp.close-sp.open) as difference
+from Yelp_Dataset.Yelp_Business yb
+inner join Sp500_Dataset.Ticker_Symbol ts on yb.business_id = ts.business_id
+inner join Sp500_Dataset.SP500 sp on ts.ticker = sp.Name
+group by sp.Name
+order by Avg_Ratings desc
 
 --This query joins multiple tables from Dataset1 and Dataset2 to show if there is a correlation between the
 --change in stock prices and the change in average ratings for Starbucks over the 5 years (monthly).
