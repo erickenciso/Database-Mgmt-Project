@@ -2,5 +2,4 @@ We will create a workflow for Dataset1
 Task 1: create_Yelp_Business_Table  
 Task 2: create_Yelp_Review_Table 
 Task 3: create_Yelp_User_Table 
-Task 4: transform_Yelp_Business_Table dependendent on Task 1, add ticker symbol for businesses
-Task 5: transform_Yelp_User_Table dependent on task 3, create new table to hold user friend relationships and delete friends table from column
+Task 4: transform_Yelp_User_Table dependent on task 3, create new table to hold user friend relationships and delete friends table from column
